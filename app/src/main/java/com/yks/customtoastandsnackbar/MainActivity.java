@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         customtoast.seticon(R.drawable.ic_baseline_notifications_24);
         customtoast.customtoast(getApplicationContext(), "custom toast");
-
+         //total 15 properties//
+        //custom toast with bg image, icon image,bg color,text color,card elevation,elevation,radius,textsize, position of toast (x,y)offset,icon gravity//
           customtoast.seticon(R.drawable.new1);
           customtoast.setbgcolor("#FF0000");
           customtoast.setbg(R.drawable.toast);
@@ -42,16 +43,15 @@ public class MainActivity extends AppCompatActivity {
           customtoast.setxoffset(0);
           customtoast.setyoffset(300);
           customtoast.seticongravity(Gravity.CENTER);
-        customtoast.settextgravity(Gravity.CENTER);
-        customtoast.seticonmargin(5,5,0,5);
-        customtoast.settextmargin(5,5,15,5);
+          customtoast.settextgravity(Gravity.CENTER);
+          customtoast.seticonmargin(5,5,0,5);
+          customtoast.settextmargin(5,5,15,5);
 
         customtoast.customtoast(getApplicationContext(), "custom toast with bg");
 
           // u have to define attributes for each new toast otherwise it sets to default//
         customtoast.setbgcolor("#3A6CA3");
         customtoast.settextcolor("#ffffff");
-    //    customtoast.seticon(R.drawable.new1);
         customtoast.customtoast(getApplicationContext(), "custom toast with color");
 
 //myfn();

@@ -38,8 +38,8 @@ public  class customtoast {
     private  static int x=0;
     private static int y=150;
 
-    public  static int icongravity=Gravity.CENTER;
-    public  static int textgravity=Gravity.CENTER;
+    private  static int icongravity=Gravity.CENTER;
+    private  static int textgravity=Gravity.CENTER;
 
 
     private static  float iconmarginleft=5;
