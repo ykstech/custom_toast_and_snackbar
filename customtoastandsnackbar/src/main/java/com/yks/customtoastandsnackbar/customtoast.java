@@ -38,6 +38,21 @@ public  class customtoast {
     private  static int x=0;
     private static int y=150;
 
+    public  static int icongravity=Gravity.CENTER;
+    public  static int textgravity=Gravity.CENTER;
+
+
+    private static  float iconmarginleft=5;
+    private static  float iconmargintop=5;
+    private static  float iconmarginright=0;
+    private static  float iconmarginbottom=5;
+
+    private static  float textmarginleft=15;
+    private static  float textmargintop=5;
+    private static  float textmarginright=15;
+    private static  float textmarginbottom=5;
+
+
     //initialise//
     public  customtoast(Activity _activity) {
         activity = _activity;
@@ -57,8 +72,23 @@ public  class customtoast {
     public static void setradius(float radius2){radius=radius2;}
     public static void setxoffset(int x2){x=x2;}
     public static void setyoffset(int y2){y=y2;}
+    public static void seticonmargin(float iconmarginleft2,float iconmargintop2,float iconmarginright2,float iconmarginbottom2){
+         iconmarginleft=iconmarginleft2;
+         iconmargintop=iconmargintop2;
+         iconmarginright=iconmarginright2;
+         iconmarginbottom=iconmarginbottom2;
+    }
+    public static void settextmargin(float textmarginleft2,float textmargintop2,float textmarginright2,float textmarginbottom2){
+        textmarginleft=textmarginleft2;
+        textmargintop=textmargintop2;
+        textmarginright=textmarginright2;
+        textmarginbottom=textmarginbottom2;
+    }
+    public static void seticongravity(int icongravity2){icongravity=icongravity2;}
+    public static void settextgravity(int textgravity2){textgravity=textgravity2;}
 
-///
+
+    ///
     ///simple toast//
     public static void toast(Context context, String message3){ Toast.makeText(context,message3,Toast.LENGTH_SHORT).show(); }
 
@@ -80,11 +110,23 @@ public  class customtoast {
             if (toasticon != 0) {
                 im.setBackgroundResource(toasticon);
 
+                LinearLayout.LayoutParams params3 = new LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.WRAP_CONTENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
+                );
+                //   params.weight = 1.0f;
+                params3.gravity = icongravity;
+                params3.setMargins(converter(iconmarginleft,context),converter(iconmargintop,context),converter(iconmarginright,context),converter(iconmarginbottom,context));
+
+                im.setLayoutParams(params3);
+
             }
             if (toastbg != 0) {
                 lv.setBackgroundResource(toastbg);
 
             }
+
+
 
             cv.setElevation(converter(elevation,context));
             cv.setCardElevation(converter(cardelevation,context));
@@ -94,6 +136,7 @@ public  class customtoast {
                     LinearLayout.LayoutParams.WRAP_CONTENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT
             );
+
             params.setMargins((int) (converter(cardelevation,context)+40), (int) (converter(cardelevation,context)+40), (int) (converter(cardelevation,context)+40), (int) (converter(cardelevation,context)+40));
             cv.setLayoutParams(params);
 
@@ -104,6 +147,16 @@ public  class customtoast {
             tv.setTextColor(Color.parseColor(color));
             tv.setTypeface(Typeface.defaultFromStyle(typeface));
             tv.setTextSize(textsize);
+
+            LinearLayout.LayoutParams params2 = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+            );
+         //   params.weight = 1.0f;
+            params2.gravity = textgravity;
+            params2.setMargins(converter(textmarginleft,context),converter(textmargintop,context),converter(textmarginright,context),converter(textmarginbottom,context));
+
+            tv.setLayoutParams(params2);
 
 
             tv.setText(message);
@@ -126,6 +179,21 @@ public  class customtoast {
              elevation=5;
              cardelevation=5;
              radius=10;
+
+            iconmarginleft=5;
+             iconmargintop=5;
+            iconmarginright=0;
+             iconmarginbottom=5;
+
+             textmarginleft=15;
+            textmargintop=5;
+             textmarginright=15;
+          textmarginbottom=5;
+
+           icongravity=Gravity.CENTER;
+            textgravity=Gravity.CENTER;
+
+
         }
         private static int converter(float dp,Context cc){
             Resources r = cc.getResources();
