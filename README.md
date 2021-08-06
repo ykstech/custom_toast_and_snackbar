@@ -36,7 +36,8 @@ allprojects {
   > For custom toast with 16 properties u can add or remove as per your requirement.
   ```java
    //total 16 properties//
-        //custom toast with bg image, icon image,bg color,text color,card elevation,elevation,radius,textsize, position of toast (x,y)offset,icon gravity//
+        //custom toast with bg image, icon image,bg color,text color,card elevation,elevation,
+	//radius,textsize, position of toast (x,y)offset,icon gravity//
           customtoast.seticon(R.drawable.new1);
           customtoast.setbgcolor("#FF0000");
           customtoast.setbg(R.drawable.toast);
