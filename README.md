@@ -1,6 +1,6 @@
 # custom_toast_and_snackbar
 Android library for custom toast and snackbar </br>
-Current latest version <b>1.2</b>
+Current latest version <b>1.3</b>
 > Step 1. Add the JitPack repository to your build file
 ```gradle
 allprojects {
