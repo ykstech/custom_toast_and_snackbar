@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
           customtoast.seticon(R.drawable.ic_baseline_notifications_24);
           customtoast.setbgcolor("#FF0000");
-          //customtoast.setbg();
+          customtoast.setbg(R.drawable.ic_baseline_notifications_24);
           customtoast.setcardelevation(5);
           customtoast.setelevation(5);
           customtoast.setradius(10);
