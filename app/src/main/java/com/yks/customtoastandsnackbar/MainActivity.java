@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         customtoast.toast(this,"library created");
             //custom toast//
 
-          customtoast.seticon(R.drawable.ic_baseline_notifications_24);
+          customtoast.seticon(R.drawable.);
           customtoast.setbgcolor("#FF0000");
-          customtoast.setbg(R.drawable.ic_baseline_notifications_24);
+         // customtoast.setbg(R.drawable.);
           customtoast.setcardelevation(5);
           customtoast.setelevation(5);
           customtoast.setradius(10);
