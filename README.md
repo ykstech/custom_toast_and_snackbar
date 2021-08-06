@@ -1,3 +1,4 @@
+
 # custom_toast_and_snackbar
 Android library for custom toast and snackbar </br>
 Current latest version <b>1.3</b>
@@ -33,6 +34,7 @@ allprojects {
         customtoast.customtoast(getApplicationContext(), "custom toast");
        
   ```
+  <img src="https://user-images.githubusercontent.com/85982995/128543861-9a37debe-7743-4179-b3c4-440ae63adb38.png" width="200" height="400"/>
   > For custom toast with 16 properties u can add or remove as per your requirement.
   ```java
    //total 16 properties//
