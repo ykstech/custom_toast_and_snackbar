@@ -35,7 +35,7 @@ allprojects {
   ```
   <img src="https://user-images.githubusercontent.com/85982995/128543861-9a37debe-7743-4179-b3c4-440ae63adb38.png" width="250" height="400"></img>
   <img src="https://user-images.githubusercontent.com/85982995/128550148-9dee376b-a727-47ec-8475-b382964517ef.png" width="250" height="400"></img>
-
+  <img src="https://user-images.githubusercontent.com/85982995/128550868-d7b68028-545e-4807-bd6a-2826569119ed.png"  width="250" height="400"></img>
   > For custom toast with 16 properties u can add or remove as per your requirement.
   ```java
    //total 16 properties//
