@@ -52,6 +52,8 @@ public  class customtoast {
     private static  float textmarginright=15;
     private static  float textmarginbottom=5;
 
+    private static int duration=Toast.LENGTH_SHORT;
+
 
     //initialise//
     public  customtoast(Activity _activity) {
@@ -87,10 +89,12 @@ public  class customtoast {
     public static void seticongravity(int icongravity2){icongravity=icongravity2;}
     public static void settextgravity(int textgravity2){textgravity=textgravity2;}
 
+    public static void setduration(int duration2){duration=duration2;}
+
 
     ///
     ///simple toast//
-    public static void toast(Context context, String message3){ Toast.makeText(context,message3,Toast.LENGTH_SHORT).show(); }
+    public static void toast(Context context, String message3){ Toast.makeText(context,message3,duration).show(); duration=Toast.LENGTH_SHORT;}
 
 
 
@@ -163,7 +167,7 @@ public  class customtoast {
             Toast toast = new Toast(context);
             toast.setGravity(Gravity.BOTTOM, x, y);
 
-            toast.setDuration(Toast.LENGTH_LONG);
+            toast.setDuration(duration);
             toast.setView(layout);
             toast.show();
 
@@ -192,7 +196,7 @@ public  class customtoast {
 
            icongravity=Gravity.CENTER;
             textgravity=Gravity.CENTER;
-
+            duration=Toast.LENGTH_SHORT;
 
         }
         private static int converter(float dp,Context cc){

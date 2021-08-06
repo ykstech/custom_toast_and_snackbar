@@ -8,6 +8,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.widget.Toast;
 
 import java.io.IOException;
 
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
           customtoast.settextgravity(Gravity.CENTER);
           customtoast.seticonmargin(5,5,0,5);
           customtoast.settextmargin(5,5,15,5);
+          customtoast.setduration(Toast.LENGTH_LONG);
 
         customtoast.customtoast(getApplicationContext(), "custom toast with bg");
 
