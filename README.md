@@ -1,5 +1,7 @@
 # custom_toast_and_snackbar
-Android library for custom toast and snackbar </br>
+
+Android library for custom toast and snackbar &nbsp; &nbsp;
+[![](https://jitpack.io/v/ykstech/custom_toast_and_snackbar.svg)](https://jitpack.io/#ykstech/custom_toast_and_snackbar)</br>
 Current latest version <b>1.3</b>
 > Step 1. Add the JitPack repository to your build file
 ```gradle
@@ -13,7 +15,7 @@ allprojects {
 > Step 2. Add the dependency
 ```gradle
   dependencies {
-	        implementation 'com.github.ykstech:custom_toast_and_snackbar:Tag'
+	        implementation 'com.github.ykstech:custom_toast_and_snackbar:1.3'
 	}
   ```
   In place of tag u have to wright the latest version of the library 
